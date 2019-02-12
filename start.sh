@@ -1,1 +1,1 @@
-docker run -it -v ./:/config --name ss-server --net=host shadowsocks-obfs -c /config/config.json
+docker run --rm -d -v conf/config:/config --name ss-server-obfs --net=host shadowsocks-obfs -c /config/config.json
